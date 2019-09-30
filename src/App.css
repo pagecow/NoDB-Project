@@ -1,22 +1,114 @@
-.App {
-  text-align: center;
+body {
+  margin: 0px;
+  height: 80vh;
+  /* background-color: rgb(249, 246, 246); */
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  height: 10vh;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: white;
+  /* background-color: #21548F; */
+  border-bottom: solid black 1px;
 }
 
-.App-link {
-  color: #09d3ac;
+.logo {
+  margin-left: 10%;
+  color: #21548F;
+  /* color: black; */
+  /* color: white; */
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold
+}
+
+.topnav {
+  margin-right: 10%;
+}
+
+.log-in-button {
+  height: 30px;
+  width: 70px;
+  border-radius: 3px;
+  /* background-color: #21548F; */
+  background-color: white;
+  color: #21548F;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sign-up-button {
+  height: 30px;
+  width: 70px;
+  border-radius: 3px;
+  /* background-color: #21548F; */
+  background-color: white;
+  color: #21548F;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.headline {
+  color: black;
+  /* color: white; */
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: bold;
+}
+
+.sub-headlines {
+  
+  color: black;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.home-icon-1 {
+  height: 22px;
+  float: left;
+}
+
+.home-icon-2 {
+  height: 25px;
+  float: left;
+}
+
+.home-icon-3 {
+  height: 23px;
+  float: left;
+}
+
+
+.sign-up-inputs {
+  margin-left: 10%;
+  margin-top: 30px;
+}
+
+.sign-up-form-button {
+  margin-left:10%;
+  margin-top: 35px;
+  background-color: #21548F;
+  /* background-color: white; */
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  width: 281px;
+  border-radius: 5px;
+}
+
+.sign-up-text {
+  margin-left: 10%;
+  font-weight: 600;
 }
