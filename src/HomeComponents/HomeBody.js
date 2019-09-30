@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 class HomeBody extends React.Component {
     render(){
@@ -18,15 +19,8 @@ class HomeBody extends React.Component {
                 </div>    
 
 
-                {/* SIGN UP FORM */}
-
-                {/* <div className='sign-up-inputs'>
-                    <input></input>
-                    <input></input>
-                </div> */}
-
                 <div>
-                    <button className='sign-up-form-button'>WRITE FREE FOR 30 DAYS</button>
+                    <Link to="/stepOne"><button className='sign-up-form-button'>WRITE FREE FOR 30 DAYS</button></Link>
                     <p class='sign-up-text'>Then $14.99/month. Cancel anytime.</p>
                 </div>
 

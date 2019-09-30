@@ -17,6 +17,7 @@ header {
 
 .logo {
   margin-left: 10%;
+  border: 0px;
   color: #21548F;
   /* color: black; */
   /* color: white; */
@@ -89,12 +90,6 @@ header {
   float: left;
 }
 
-
-.sign-up-inputs {
-  margin-left: 10%;
-  margin-top: 30px;
-}
-
 .sign-up-form-button {
   margin-left:10%;
   margin-top: 35px;
@@ -111,4 +106,20 @@ header {
 .sign-up-text {
   margin-left: 10%;
   font-weight: 600;
+}
+
+
+/* SIGN-UP PAGE */
+
+.sign-up-page {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.sign-up-inputs {
+  height: 30px;
+  width: 300px;
+  
 }
