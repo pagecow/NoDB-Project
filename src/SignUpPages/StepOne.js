@@ -12,7 +12,7 @@ class StepOne extends React.Component {
                     <input className='sign-up-inputs' placeholder="Email Address"></input>
                      
                     <br></br>
-                    <input className='sign-up-inputs' placeholder="Password"></input>
+                    <input type="password" className='sign-up-inputs' placeholder="Password"></input>
                     <br></br>
                     <Link to="/stepTwo"><button className='sign-up-form-button-2'>CREATE ACCOUNT</button></Link>
                 </div>
