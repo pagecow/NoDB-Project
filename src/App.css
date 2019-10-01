@@ -119,6 +119,8 @@ header {
 .sign-up-page {
   display: flex;
   height: 80vh;
+  margin-left: 10%;
+  margin-right: 10%;
   justify-content: center;
   margin-top: 20px;
 }
@@ -136,6 +138,13 @@ header {
 }
 
 .step-one-sub-header-2 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.step-one-sub-header-3 {
   margin-top: 5px;
   margin-bottom: 0px;
   font-size: 15px;
