@@ -1,3 +1,5 @@
+/* Home Sign-Up Page */
+
 body {
   margin: 0px;
   height: 80vh;
@@ -7,7 +9,9 @@ body {
 header {
   display: flex;
   height: 10vh;
-  width: 100%;
+  width: 100%ç;
+  padding-left: 10%;
+  padding-right: 10%;
   align-items: center;
   justify-content: space-between;
   background-color: white;
@@ -16,8 +20,9 @@ header {
 }
 
 .logo {
-  margin-left: 10%;
+  margin-left: 0px;
   border: 0px;
+  padding: 0px;
   color: #21548F;
   /* color: black; */
   /* color: white; */
@@ -27,7 +32,7 @@ header {
 }
 
 .topnav {
-  margin-right: 10%;
+  
 }
 
 .log-in-button {
