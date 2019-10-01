@@ -120,11 +120,54 @@ header {
   display: flex;
   height: 80vh;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 20px;
+}
+
+.step-one-header {
+  margin-bottom: 0px;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.step-one-sub-header {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 23px;
+}
+
+.step-one-sub-header-2 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 15px;
 }
 
 .sign-up-inputs {
   height: 30px;
-  width: 300px;
-  
+  width: 274.85px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.sign-up-form-button-2 {
+  margin-top: 20px;
+  background-color: #21548F;
+  /* background-color: white; */
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  width: 281px;
+  border-radius: 5px;
+}
+
+.sign-up-form-button-3 {
+  margin-top: 200px;
+  background-color: #21548F;
+  /* background-color: white; */
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  width: 281px;
+  border-radius: 5px;
 }
