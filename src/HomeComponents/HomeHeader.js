@@ -7,7 +7,7 @@ class HomeHeader extends React.Component {
                 <header>
                     <Link to="/"><button class="logo">PageCOW</button></Link>        
                     <div class="topnav">
-                        <Link to='/TextEditor'><button class="log-in-button">Log In</button></Link>
+                        <Link to='/LoggedInHome'><button class="log-in-button">Log In</button></Link>
                         {/* <button class="sign-up-button">Sign Up</button> */}
                     </div>
                 </header>

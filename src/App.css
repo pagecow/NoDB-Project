@@ -181,10 +181,19 @@ header {
   border-radius: 5px;
 }
 
-/* Editor Page */
+/* Logged In Page */
 
+.create-a-document {
+  margin-top: 40px;
+  margin-left: 20%;
+  padding-bottom: 55px;
+  height: 300px;
+  width: 200px;
+  font-size: 200px;
+  font-weight: 100;
+}
 
-/* DevMountain Containers CSS */
+/* Text Editor (DevMountain Containers CSS) */
 
 .headerBar {
 	width: 100%;

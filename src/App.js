@@ -6,6 +6,7 @@ import HomeBody from './HomeComponents/HomeBody';
 import StepOne from './SignUpPages/StepOne';
 import StepTwo from './SignUpPages/StepTwo';
 import TextEditor from './TextEditorComponents/TextEditor';
+import LoggedInHome from './TextEditorComponents/LoggedInHome';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route exact path='/stepOne' component={StepOne}/>
       <Route exact path='/stepTwo' component={StepTwo}/>
       <Route exact path='/TextEditor' component={TextEditor}/>
+      <Route exact path='/LoggedInHome' component={LoggedInHome}/>
     </div>
   );
 }
