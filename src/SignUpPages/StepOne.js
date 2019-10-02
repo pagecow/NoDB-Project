@@ -13,7 +13,6 @@ class StepOne extends React.Component {
                         <p className='step-one-header'>Step 1 of 2</p>
                         <p className='step-one-sub-header'>Create an account.</p>
                         <input className='sign-up-inputs' placeholder="Email Address"></input>
-                        
                         <br></br>
                         <input type="password" className='sign-up-inputs' placeholder="Password"></input>
                         <br></br>
