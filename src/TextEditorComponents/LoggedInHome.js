@@ -8,9 +8,9 @@ class LoggedInHome extends React.Component {
           <div>
               <HeaderLoggedIn/>
 
-              <h2 className="logged-in-home-h2">Create a document.</h2>
+              <h2 className="logged-in-home-h2">Create a document</h2>
               <Link to="/TextEditor"><button className='create-a-document'>+</button></Link>
-              
+
           </div>
       );
     }
