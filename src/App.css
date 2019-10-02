@@ -9,7 +9,6 @@ body {
 header {
   display: flex;
   height: 10vh;
-  width: 100%ç;
   padding-left: 10%;
   padding-right: 10%;
   align-items: center;
@@ -183,6 +182,8 @@ header {
 
 /* Logged In Page */
 
+
+
 .logged-in-home-h2 {
   margin-top: 50px;
   margin-left: 19.85%;
@@ -199,7 +200,42 @@ header {
   font-weight: 100;
 }
 
-/* Text Editor (DevMountain Containers CSS) */
+
+/* Text Editor Page */
+
+.text-editor-header {
+  display: flex;
+  height: 10vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  /* background-color: #21548F; */
+  border-bottom: solid rgb(194, 194, 194) 1px;
+}
+
+
+.tool-bar {
+  display: flex;
+  height: 5vh;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  /* background-color: #21548F; */
+  border-bottom: solid rgb(194, 194, 194) 1px;
+}
+
+
+
+
+
+
+
+/* DevMountain Containers CSS */
 
 .headerBar {
 	width: 100%;

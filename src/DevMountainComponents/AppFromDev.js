@@ -29,7 +29,7 @@ class AppFromDev extends Component {
   // updateSize
   updateSize = (val) => {
     this.setState({
-      fontSize: val
+      fontSize: +val
     })
   }
 
