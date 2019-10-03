@@ -9,22 +9,34 @@ class ProfilePage extends React.Component {
         super();
 
         this.state = {
-            email: '',
-            password: '',
+            email: 'pagecow@gmail.com',
+            password: 'jake',
         }
     }
 
-    componentDidMount() {
-        axios
-            .get('http://localhost:7777/api/users')
-            .then(res => {
-                const data = res.data;
-                this.setState({
-                    email: data.email,
-                    password: data.password
-                })
-            });
-    }
+    // componentDidMount() {
+    //     axios
+    //         .get('http://localhost:7777/api/users')
+    //         .then(res => {
+    //             const data = res.data;
+    //             this.setState({
+    //                 email: data.email,
+    //                 password: data.password
+    //             })
+    //         });
+    // }
+
+        handleEmailChange() {
+
+        }
+
+        handleEmailChange() {
+            
+        }
+
+        handleDeleteRequest() {
+            
+        }
     
     
     render() {
@@ -34,8 +46,20 @@ class ProfilePage extends React.Component {
                 <HeaderLoggedIn/>
                 <div id="profile-body">
                     <h2 className="profile-headline">Profile Settings</h2>
-                    <h3>{this.state.email}</h3>
-                    <h3>{this.state.password}</h3>
+                    
+                    <p className='profile-sub-headline'>Email: {this.state.email}</p>
+                       <input className='update-input' placeholder="New Email"></input> 
+                       <br></br>
+                       <button className='update-button'>Update Email</button>
+                       <br></br>
+
+                    <p className='profile-sub-headline'>Password: {this.state.password}</p>
+                        <input className='update-input' placeholder="New Password"></input> 
+                        <br></br>
+                        <button className='update-button'>Update Password</button>
+
+                    <Link to='/'><button className='delete-account-button'>Delete My Account</button></Link>
+                    
                 </div>
             </div>
         )

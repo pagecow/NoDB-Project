@@ -248,12 +248,56 @@ header {
 #profile-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 25px;
+  margin-left: 25%;
 }
 
 .profile-headline {
+  margin-top: 60px;
+}
 
+.profile-sub-headline {
+  font-size: 25px;
+}
+
+.update-input {
+  height: 30px;
+  width: 275px;
+  font-size: 15px;
+  
+}
+
+.update-button {
+  background-color: #21548F;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  width: 281px;
+  border-radius: 5px;
+}
+
+.delete-account-button {
+  background-color: rgb(143, 33, 59);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 20px;
+  height: 40px;
+  width: 800px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .delete-account-button {
+    width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .delete-account-button {
+    width: 281px;
+  }
 }
 
 

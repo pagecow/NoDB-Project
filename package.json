@@ -38,7 +38,8 @@
     ]
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  "main": "server/index.js",
+  "proxy": "http://localhost:7777",
   "devDependencies": {},
   "repository": {
     "type": "git",
