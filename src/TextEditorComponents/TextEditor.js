@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import TextEditorHeader from './TextEditorHeader';
 import TextEditorToolBar from './TextEditorToolBar';
-import {VueEditor} from 'vue2-editor';
 
 
 class TextEditor extends React.Component {
@@ -12,7 +11,7 @@ class TextEditor extends React.Component {
             <TextEditorHeader/>
             <TextEditorToolBar/>
 
-            {/* <VueEditor/> */}
+            <vue-editor></vue-editor>
             
             
         </div>
