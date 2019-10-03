@@ -7,8 +7,8 @@ class HeaderLoggedIn extends React.Component {
                 <header>
                     <Link to="/LoggedInHome"><button class="logo">PageCOW</button></Link>        
                     <div class="topnav">
+                        <Link to="/ProfilePage"><button class="profile-button">Profile</button></Link>
                         <Link to="/"><button class="log-in-button">Sign Out</button></Link>
-                        {/* <button class="sign-up-button">Sign Up</button> */}
                     </div>
                 </header>
         )

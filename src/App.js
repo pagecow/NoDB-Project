@@ -7,6 +7,7 @@ import StepOne from './SignUpPages/StepOne';
 import StepTwo from './SignUpPages/StepTwo';
 import TextEditor from './TextEditorComponents/TextEditor';
 import LoggedInHome from './TextEditorComponents/LoggedInHome';
+import ProfilePage from './ProfileComponents/ProfilePage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route exact path='/stepTwo' component={StepTwo}/>
       <Route exact path='/TextEditor' component={TextEditor}/>
       <Route exact path='/LoggedInHome' component={LoggedInHome}/>
+      <Route exact path='/ProfilePage' component={ProfilePage}/>
     </div>
   );
 }

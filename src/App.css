@@ -182,7 +182,17 @@ header {
 
 /* Logged In Page */
 
-
+.profile-button {
+  height: 30px;
+  width: 90px;
+  border-radius: 3px;
+  /* background-color: #21548F; */
+  background-color: white;
+  color: #21548F;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 20px;
+}
 
 .logged-in-home-h2 {
   margin-top: 50px;
@@ -229,6 +239,21 @@ header {
 
 .tool-bar-buttons {
   margin-right: 5px;
+}
+
+
+
+/* Profile Page */
+
+#profile-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.profile-headline {
+
 }
 
 
