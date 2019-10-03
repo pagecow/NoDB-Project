@@ -3,7 +3,8 @@ let id = 0;
 
 module.exports = {
     create: (req, res) => {
-        let {email, password} = req.data;
+        let {email, password} = req.body;
+        console.log(email, password)
         users.push({id, email, password});
         id++;
         res.status(200).send(users);
@@ -12,7 +13,7 @@ module.exports = {
         res.status(200).send(users);
     },
     update: (req, res) => {
-        let {email, password} = req.data;
+        let {email, password} = req.body;
         let updateID = req.params.id;
         let userIndex = users.findIndex(users => users.id == updateID)
         let user = user[userIndex]

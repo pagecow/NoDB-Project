@@ -6,9 +6,9 @@ const ctrl = require('./Controllers/controllers')
 app.use(cors())
 app.use(express.json());
 
-app.create('/api/users', ctrl.create);
-app.read('/api/users', ctrl.create);
-app.update('/api/users', ctrl.create);
+app.post('/api/users', ctrl.create);
+app.get('/api/users', ctrl.create);
+app.put('/api/users', ctrl.create);
 app.delete('/api/users', ctrl.create);
 
 
