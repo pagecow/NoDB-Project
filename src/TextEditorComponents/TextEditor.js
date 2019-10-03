@@ -10,8 +10,6 @@ class TextEditor extends React.Component {
         <div>
             <TextEditorHeader/>
             <TextEditorToolBar/>
-
-            <vue-editor></vue-editor>
             
             
         </div>

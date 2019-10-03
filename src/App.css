@@ -221,10 +221,14 @@ header {
   height: 5vh;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: white;
-  /* background-color: #21548F; */
   border-bottom: solid rgb(194, 194, 194) 1px;
+}
+
+.tool-bar-buttons {
+  
 }
 
 
