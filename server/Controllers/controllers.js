@@ -13,19 +13,12 @@ module.exports = {
     },
     update: (req, res) => {
         let {email, password} = req.body;
-        let updateID = req.params.id;
-        let userIndex = users.findIndex(users => users.id == updateID)
-        let user = user[userIndex]
-
-        user[userIndex] = {
-            id: user.id,
-            email: user.email,
-            password: user.password
-        };
-        res.status(200).send(users)
+        user.email = email;
+        user.password = password;
+        res.status(200).send(user)
     },
     delete: (req, res) => {
         delete req.user;
-        res.status(200).send(url(`https://pagecow.com`))
+        res.status(200).send(url(`/api/`))
     }
 }
