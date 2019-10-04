@@ -10,8 +10,8 @@ class ProfilePage extends React.Component {
         super();
 
         this.state = {
-            email: 'pagecow@gmail.com',
-            password: 'jake',
+            email: '',
+            password: '',
         }
     }
 
@@ -27,21 +27,33 @@ class ProfilePage extends React.Component {
                 });
         }
 
-        handleEmailChange(value) {
+        handleEmailChange = (value) => {
             axios
                 .put('http://localhost:7777/api/users', {
                     email: value,
                     password: this.state.password   
                 })
+                .then(function(response) {
+                    console.log(response);
+                })
+                .catch(function(error) {
+                    console.log(error)
+                });
                 
         }
 
-        handlePasswordChange(value) {
+        handlePasswordChange = (value) => {
             axios
             .put('http://localhost:7777/api/users', {
                 email: this.state.email,
                 password: value   
             })
+            .then(function(response) {
+                console.log(response);
+            })
+            .catch(function(error) {
+                console.log(error)
+            });
         }
 
         newGetRequest = () => {
@@ -56,7 +68,16 @@ class ProfilePage extends React.Component {
                 });
         }
 
-        handleDeleteRequest() {
+        handleDeleteRequest = () => {
+            axios
+                .delete(`http://localhost:7777/api/users`)
+                .then(res => {
+                    console.log(res)
+                    this.setState({
+                        email: res.data.email,
+                        password: res.data.password
+                    })
+                })
 
         }
     
@@ -65,8 +86,11 @@ class ProfilePage extends React.Component {
         console.log(this.state)
         return(
             <div>
+
                 <HeaderLoggedIn/>
+
                 <div id="profile-body">
+
                     <h2 className="profile-headline">Profile Settings</h2>
                     
                     <p className='profile-sub-headline'>Email: {this.state.email}</p>
@@ -88,9 +112,16 @@ class ProfilePage extends React.Component {
                         onClick={this.newGetRequest}
                         >Update Password</button>
 
-                    <Link to='/'><button className='delete-account-button'>Delete My Account</button></Link>
+                    <Link to='/'>
+
+                        <button className='delete-account-button'
+                        onClick={this.handleDeleteRequest} 
+                        >Delete My Account</button>
+                    
+                    </Link>
                     
                 </div>
+
             </div>
         )
     }

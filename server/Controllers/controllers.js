@@ -18,7 +18,7 @@ module.exports = {
         res.status(200).send(user)
     },
     delete: (req, res) => {
-        delete req.user;
-        res.status(200).send(url(`/api/`))
+        user = {email: '', password: ''};
+        res.status(200).send(user)
     }
 }
